@@ -523,7 +523,6 @@ u {
 #fs {
 	position: relative;
 	height: 480px;
-	background: #CCCCCC;
 	margin-bottom: 10px;
 }
 
@@ -740,7 +739,6 @@ u {
 .fs-sale {
 	height: 130px;
 	margin-left: -10px;
-	background: gray;
 }
 
 .left,
@@ -854,6 +852,7 @@ u {
     width: 190px;
 }
 .service_list {
+	position: relative;
     margin-left: -1px;
     width: 192px;
     height: 210px;
@@ -1011,10 +1010,10 @@ u {
 	color: white;
 }
 .tanchu{
-	background: greenyellow;
+	background: white;
 	position: absolute;
 	left: 0;
-	top: 0;
+	top: 212px;
 	width: 190px;
 }
 .tanchu_tab{
@@ -1028,6 +1027,7 @@ u {
     text-align: center;
 }
 .huafei{
+	display: none;
 	color: #666;
     width: 190px;
 }
@@ -1122,7 +1122,6 @@ u {
 #sk {
 	margin-bottom: 30px;
 	height: 305px;
-	background: green;
 }
 
 .sk-count {
@@ -1272,7 +1271,80 @@ u {
 	height: 225px;
 	padding: 0 14px 0 15px;
 	border-right: 1px solid #e7e7e7;
-	background: yellow;
+	background: white;
+	position: relative;
+	
+}
+.sk_item_tag{
+	position: absolute;
+    top: 0;
+    left: 0;
+    text-align: center;
+    background: url(../img/jd/picall-2.png) no-repeat -54px -40px;
+    width: 30px;
+    height: 40px;
+    z-index: 1;
+}
+.mod_ver{
+	display: inline-block;
+    width: 0;
+    height: 100%;
+    vertical-align: middle;
+    font-size: 0;
+}
+.sk_item_tag_txt{
+	font-size: 12px;
+    color: #fff;
+    line-height: 14px;
+    display: inline-block;
+    vertical-align: 2px;
+    padding-top: 2px;
+}
+.sk_item_pic_lk{
+    outline: 0;
+}
+.sip{
+	position: relative;
+	width: 130px;
+    height: 130px;
+    margin: 17px 25px;
+    text-align: center;
+}
+.sipp{
+	color: #999;
+    display: block;
+    max-width: 100%;
+    _width: 100%;
+    overflow: hidden;
+    font-size: 12px;
+    text-align: left;
+    height: 32px;
+    line-height: 16px;
+    word-wrap: break-word;
+    word-break: break-all;
+}
+.sk_item_shadow{
+	position: absolute;
+    left: 0;
+    top: 130px;
+    text-align: center;
+    background: url(../img/jd/picall-2.png) 0 0;
+    width: 170px;
+    height: 20px;
+}
+.sk_item_price{
+	padding: 3px 0;
+    height: 25px;
+}
+.sk_newprice{
+	font-size: 18px;
+    font-weight: 700;
+    margin-right: 8px;
+    color: #f10214;
+}
+.sk_price{
+	color: #999;
+    font-size: 12px;
 }
 
 .border-right-none {
@@ -1295,12 +1367,12 @@ u {
 #fbt {
 	margin-bottom: 30px;
 	height: 444px;
-	background: deepskyblue;
 }
 
 .fbt-col1,
 .fbt-col2,
 .fbt-col3 {
+	background: white;
 	width: 390px;
 	height: 444px;
 	float: left;
@@ -1379,9 +1451,25 @@ u {
 	width: 184px;
 	height: 120px;
 	position: relative;
-	background: blueviolet;
 }
-
+.find_item_name{
+	font-size: 14px;
+    color: #4998a1;
+    position: absolute;
+    top: 15px;
+    left: 20px;
+    width: 80px;
+    line-height: 20px;
+    z-index: 1;
+    word-wrap: break-word;
+}
+.fcg-img{
+	position: absolute;
+    bottom: 5px;
+    right: 10px;
+    width: 80px;
+    height: 80px;
+}
 .purple {
 	background: #7d2e5c;
 }
@@ -1413,6 +1501,32 @@ u {
 	padding: 15px 22px 10px 23px;
 	border-right: 1px solid #e7e7e7;
 }
+.brand_rec_name{
+	font-size: 16px;
+    color: #8b3a6d;
+    margin-bottom: 5px;
+    line-height: 18px;
+    height: 18px;
+    overflow: hidden;
+}
+.brand_rec_desc {
+    color: #666;
+    height: 36px;
+    margin-bottom: 8px;
+    overflow: hidden;
+}
+.brand_rec_split {
+    width: 19px;
+    height: 3px;
+    background: #8b3a6d;
+    margin-bottom: 12px;
+}
+.brand_rec_img{
+	position: relative;
+	display: block;
+    width: 140px;
+    height: 120px;
+}
 
 .orange {
 	background: #e77005;
@@ -1425,6 +1539,96 @@ u {
 	position: absolute;
 	left: -4px;
 	top: -4px;
+}
+.paih{
+	height: 389px;
+}
+.paih_nav{
+	padding: 6px 0 7px;
+    font-size: 0;
+    border-bottom: 1px solid #e7e7e7;
+    width: 370px;
+    height: 18px;
+    margin: 0 auto;
+    white-space: nowrap;
+    overflow: hidden;
+    position: relative;
+}
+.paih_a{
+	display: inline-block;
+    line-height: 18px;
+    font-size: 14px;
+    width: 77px;
+    border-right: 1px solid #d2d1d1;
+    text-align: center;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+.paih_a:hover{
+	color: #c81623;
+}
+.paih_nva_content{
+	position: relative;
+	padding: 10px;
+}
+.paih_nva_item{
+	display: none;
+	position: absolute;
+	height: 335px;
+    overflow: hidden;
+}
+.pvi_ul{
+	height: 100%;
+}
+.pvi_li{
+	position: relative;
+    float: left;
+    width: 123px;
+    text-align: center;
+}
+.pvi_a{
+	display: block;
+    padding: 12px 0;
+    border-right: 1px solid #e7e7e7;
+    border-bottom: 1px solid #e7e7e7;
+    cursor: pointer;
+}
+.pvi_ph{
+	background: url(../img/jd/picall-2.png) no-repeat -104px -40px;
+	width: 30px;
+	height: 40px;
+	position: absolute;
+    top: 12px;
+    left: 11px;
+    color: #fff;
+    line-height: 35px;
+    text-align: center;
+    font-size: 22px;
+}
+.pvi_pic{
+	margin-bottom: 10px;
+}
+.pvi_img{
+	width: 100px;
+	height: 100px;
+}
+.pvi_name{
+	height: 32px;
+    text-align: left;
+    padding: 0 11px;
+    line-height: 16px;
+    overflow: hidden;
+    word-wrap: break-word;
+    word-break: break-all;
+}
+.pvi_2{
+	background: url(../img/jd/picall-2.png) no-repeat -50px -100px;
+}
+.pvi_3{
+	background: url(../img/jd/picall-2.png) no-repeat 0px -100px;
+}
+.pvi_4{
+	background: url(../img/jd/picall-2.png) no-repeat -100px -100px;
 }
 
 #lj {
@@ -1518,16 +1722,100 @@ u {
 	height: 195px;
 	border-right: 1px solid #e7e7e7;
 	overflow: hidden;
-	background: palegreen;
 }
-
-
+.coupon_a{
+	display: block;
+    width: 100%;
+    height: 100%;
+}
+.coupon_info{
+	position: absolute;
+    z-index: 1;
+    left: 15px;
+    top: 15px;
+    width: 100px;
+    border-top: 3px solid #e93524;
+    background-color: #fff;
+}
+.coupon_price{
+	overflow: hidden;
+    margin-top: 7px;
+    height: 36px;
+    line-height: 36px;
+    font-size: 34px;
+    font-weight: 700;
+    color: #f10214;
+}
+.coupon_desc {
+    overflow: hidden;
+    margin: 3px;
+    height: 36px;
+    line-height: 18px;
+    color: #e93524;
+}
+.coupon_desc_txt {
+    display: inline-block;
+    vertical-align: middle;
+}
+.coupon_limit{
+	overflow: hidden;
+    padding: 15px 10px;
+    width: 80px;
+    height: 36px;
+    background: #e7e7e7 url(../img/jd/chi.png) repeat-x 0 0;
+    color: #666;
+}
+.coupon_limit_txt{
+	display: inline-block;
+    vertical-align: middle;
+}
+.coupon_more {
+    overflow: hidden;
+    width: 100%;
+    height: 26px;
+    background: #e93524;
+    line-height: 26px;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    text-align: center;
+    color: #fff;
+}
+.coupon_img {
+    overflow: hidden;
+    position: absolute;
+    right: 15px;
+    top: 25px;
+    width: 140px;
+    height: 140px;
+}
+.coupon_item_shadow {
+    position: absolute;
+    left: 100px;
+    top: 33px;
+    width: 15px;
+    height: 117px;
+    box-shadow: 0 0 30px #999;
+}
 /*这里是减价阶段*/
 
 #reduce {
 	margin-bottom: 30px;
 	height: 100px;
 	background: #e0e0e0;
+}
+.rec_item{
+    overflow: hidden;
+    float: left;
+    width: 396px;
+    height: 100%;
+}
+.rec_a{
+	display: block;
+    height: 100%;
+}
+.rec_img{
+	display: block;
+    margin: auto;
 }
 
 
@@ -1575,6 +1863,7 @@ u {
 }
 
 .entry_lk {
+	position: relative;
 	display: block;
 	width: 100%;
 	height: 100%;
@@ -1589,6 +1878,7 @@ u {
 	top: 0;
 	opacity: 0.9;
 	color: white;
+	z-index: 1;
 }
 
 .entry_info {
@@ -1618,8 +1908,10 @@ u {
 }
 
 .entry_img {
+	right: -10px;
+	position: absolute;
 	display: block;
-	width: 400px;
+	width: 410px;
 	height: 170px;
 }
 
@@ -1679,7 +1971,7 @@ u {
 	height: 24px;
 	line-height: 24px;
 	padding: 0 10px;
-	border: 1px solid #fff;
+	border: 1px solid #c187af;
 	margin-left: 10px;
 	margin-bottom: 10px;
 	max-width: 100px;
@@ -1691,7 +1983,9 @@ u {
 	background: #c187af;
 	color: white;
 }
-
+.pt_tags_item:hover{
+	border-color: white;
+}
 .pt_bd_wrapper {
 	padding: 10px;
 	background-color: #fff;
@@ -1717,6 +2011,7 @@ u {
 }
 
 .pt_cover_img {
+	position: relative;
 	display: block;
 	width: 193px;
 	height: 260px;
@@ -1756,12 +2051,51 @@ u {
 	width: 188px;
 	height: 130px;
 }
+.pt_bi_tit{
+	position: absolute;
+    top: 25px;
+    left: 25px;
+    font-size: 14px;
+    color: red;
+    max-width: 130px;
+    overflow: hidden;
+    word-wrap: break-word;
+    word-break: break-all;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    z-index: 1;
+}
+.pt_bi_promo {
+    position: absolute;
+    top: 50px;
+    left: 25px;
+    font-size: 12px;
+    color: #666;
+    max-width: 50px;
+    z-index: 1;
+}
+.pt_bi_img {
+    position: absolute;
+    bottom: 10px;
+    right: 5px;
+    display: block;
+    width: 100px;
+    height: 100px;
+    background-color: #f7f7f7;
+}
 
 .pt_more {
 	clear: both;
 	height: 130px;
 	overflow: hidden;
 	padding-top: 10px;
+}
+.pt_more_img{
+	position: relative;
+	display: block;
+    overflow: hidden;
+    width: 193px;
+    height: 130px;
 }
 
 .pt_more_item {
