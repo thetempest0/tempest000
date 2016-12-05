@@ -1,232 +1,536 @@
 {
-		"fs":[
+	"fs": [
 		"img/fs1.png",
 		"img/fs2.png"
-		],
-		
-		"sk":[{
-		"img":"img/sk1.png",
-		"title":"【京东超市】太极星 美每日混合坚果仁类 750g(零食组合干果礼盒25g*30袋)",
-		"price":"99.80",
-		"orign":"148.00"
-		},{
-		"img":"img/sk2.png",
-		"title":"【第二件半价】【京东快递】方若 被子被芯加厚冬被保暖被双人加厚冬被 香蜜尔-柠檬 200X230cm/约6斤",
-		"price":"79.00",
-		"orign":"159.00"
-		},{
-		"img":"img/sk3.png",
-		"title":"世界经典童话20册 格林童话 木偶奇遇记 儿童绘本3-6岁 幼儿绘本0-3岁儿童书籍图画书",
-		"price":"19.80",
-		"orign":"100.00"
-		},{
-		"img":"img/sk4.png",
-		"title":"乐宝来背背佳学生儿童男士成人版驼背矫正器女士坐姿塑身背部矫姿带直腰挺背儿童锁骨带透气升级款 灰色款L",
-		"price":"118.00",
-		"orign":"168.00"
-		},{
-		"img":"img/sk5.png",
-		"title":"美巢装饰上海装修1488元/㎡全包套餐 装修设计施工服务家装包设计装修公司",
-		"price":"100.00",
-		"orign":"1488.00"
-		}],
-		
-		"fcg":[{
-		"img":"img/hh1.png",
-		"title":"拜杰 韩式多功能一体锅"
-		},{
-		"img":"img/hh2.png",
-		"title":"小熊双层真空加热饭盒"
-		},{
-		"img":"img/hh3.png",
-		"title":"vivo Y55 全网通"
-		},{
-		"img":"img/hh4.png",
-		"title":"惠普 彩色办公一体机"
-		},{
-		"img":"img/hh5.png",
-		"title":"Midea电热水器"
-		},{
-		"img":"img/hh6.png",
-		"title":"LG液晶电视"
-		}],
-		
-		"pinp":[{
-		"img":"img/pinp1.png",
-		"title":"大牌新品",
-		"desc":"大象复古机械键盘"
-		},{
-		"img":"img/pinp2.png",
-		"title":"全球海鲜日",
-		"desc":"环宇生鲜任你吃"
-		}],
-		
-		"pvi":[{
-		"img":"img/pvi1.png",
-		"title":"荣耀 畅玩5C 全网通 高配版 3GB+32GB 落日金 移动联通电信4G手机 双卡双待"
-		},{
-		"img":"img/pvi2.png",
-		"title":"Apple iPhone 7 (A1660) 32G 黑色 移动联通电信4G手机"
-		},{
-		"img":"img/pvi3.png",
-		"title":"小米 红米 3S 高配全网通 3GB内存 32GB ROM 经典金色 移动联通电信4G手机 双卡双待"
-		},{
-		"img":"img/pvi4.png",
-		"title":"Apple iPhone 7 Plus (A1661) 128G 黑色 移动联通电信4G手机"
-		},{
-		"img":"img/pvi5.png",
-		"title":"【流量日租宝】联通4G空中入网卡1元=300MB开卡送15元话费"
-		},{
-		"img":"img/pvi6.png",
-		"title":"荣耀 畅玩5X 3GB内存版 落日金 移动联通电信4G手机 双卡双待"
-		},
+	],
+
+	"sk": [
 		{
-		"img":"img/pvi7.png",
-		"title":"杨红樱笑猫日记：青蛙合唱团"
+			"img": "img/sk1.png",
+			"title": "【京东超市】太极星 美每日混合坚果仁类 750g(零食组合干果礼盒25g*30袋)",
+			"price": "99.80",
+			"orign": "148.00"
+		}, {
+			"img": "img/sk2.png",
+			"title": "【第二件半价】【京东快递】方若 被子被芯加厚冬被保暖被双人加厚冬被 香蜜尔-柠檬 200X230cm/约6斤",
+			"price": "79.00",
+			"orign": "159.00"
+		}, {
+			"img": "img/sk3.png",
+			"title": "世界经典童话20册 格林童话 木偶奇遇记 儿童绘本3-6岁 幼儿绘本0-3岁儿童书籍图画书",
+			"price": "19.80",
+			"orign": "100.00"
+		}, {
+			"img": "img/sk4.png",
+			"title": "乐宝来背背佳学生儿童男士成人版驼背矫正器女士坐姿塑身背部矫姿带直腰挺背儿童锁骨带透气升级款 灰色款L",
+			"price": "118.00",
+			"orign": "168.00"
+		}, {
+			"img": "img/sk5.png",
+			"title": "美巢装饰上海装修1488元/㎡全包套餐 装修设计施工服务家装包设计装修公司",
+			"price": "100.00",
+			"orign": "1488.00"
+		}
+	],
+
+	"fcg": [
+		{
+			"img": "img/hh1.png",
+			"title": "拜杰 韩式多功能一体锅"
+		}, {
+			"img": "img/hh2.png",
+			"title": "小熊双层真空加热饭盒"
+		}, {
+			"img": "img/hh3.png",
+			"title": "vivo Y55 全网通"
+		}, {
+			"img": "img/hh4.png",
+			"title": "惠普 彩色办公一体机"
+		}, {
+			"img": "img/hh5.png",
+			"title": "Midea电热水器"
+		}, {
+			"img": "img/hh6.png",
+			"title": "LG液晶电视"
+		}
+	],
+
+	"pinp": [
+		{
+			"img": "img/pinp1.png",
+			"title": "大牌新品",
+			"desc": "大象复古机械键盘"
+		}, {
+			"img": "img/pinp2.png",
+			"title": "全球海鲜日",
+			"desc": "环宇生鲜任你吃"
+		}
+	],
+
+	"pvi": [
+		{
+			"img": "img/pvi1.png",
+			"title": "荣耀 畅玩5C 全网通 高配版 3GB+32GB 落日金 移动联通电信4G手机 双卡双待"
+		}, {
+			"img": "img/pvi2.png",
+			"title": "Apple iPhone 7 (A1660) 32G 黑色 移动联通电信4G手机"
+		}, {
+			"img": "img/pvi3.png",
+			"title": "小米 红米 3S 高配全网通 3GB内存 32GB ROM 经典金色 移动联通电信4G手机 双卡双待"
+		}, {
+			"img": "img/pvi4.png",
+			"title": "Apple iPhone 7 Plus (A1661) 128G 黑色 移动联通电信4G手机"
+		}, {
+			"img": "img/pvi5.png",
+			"title": "【流量日租宝】联通4G空中入网卡1元=300MB开卡送15元话费"
+		}, {
+			"img": "img/pvi6.png",
+			"title": "荣耀 畅玩5X 3GB内存版 落日金 移动联通电信4G手机 双卡双待"
+		}, {
+			"img": "img/pvi7.png",
+			"title": "杨红樱笑猫日记：青蛙合唱团"
+		}, {
+			"img": "img/pvi8.png",
+			"title": "窗边的小豆豆（新版）"
+		}, {
+			"img": "img/pvi9.png",
+			"title": "宝宝好品格培养经典童话(套装共10册)"
+		}, {
+			"img": "img/pvi10.png",
+			"title": "哈利·波特与被诅咒的孩子"
+		}, {
+			"img": "img/pvi11.png",
+			"title": "动物小说大王沈石溪·品藏书系（第2季）（套装全4册）"
+		}, {
+			"img": "img/pvi12.png",
+			"title": "罗尔德·达尔作品典藏：查理和巧克力工厂"
+		}, {
+			"img": "img/pvi13.png",
+			"title": "感受潮约 冬季男士加绒休闲裤男修身直筒韩版加厚男裤保暖冬款青年裤子冬天 8006黑色加绒 30(2尺3)"
+		}, {
+			"img": "img/pvi14.png",
+			"title": "花花公子（PLAYBOY ICON）男士磨毛修身弹力休闲裤男裤2016秋冬新款 M701 黑色 35"
+		}, {
+			"img": "img/pvi15.png",
+			"title": "HAUTTON 休闲裤男士2016秋冬季新款修身韩版直筒免烫商务职业小脚长西裤子男裤 黑色加厚 31"
+		}, {
+			"img": "img/pvi16.png",
+			"title": "丹顿公子【弹力舒适】棉质男士休闲裤男 英伦修身直筒长裤商务西裤韩版牛仔蓝男裤 时尚休闲 981 蓝色 32"
+		}, {
+			"img": "img/pvi17.png",
+			"title": "AR 休闲裤男2016秋冬新款商务直筒修身弹力韩版长裤男士 藏青色 31(2.4尺)"
+		}, {
+			"img": "img/pvi18.png",
+			"title": "潮至 休闲裤男秋款2016新款加绒休闲裤 藏青色加绒 29"
+		}, {
+			"img": "img/pvi19.png",
+			"title": "king booker牛仔裤男弹力修身直筒商务休闲牛仔中腰男裤 3 31(腰围2尺4)"
+		}, {
+			"img": "img/pvi20.png",
+			"title": "VKE  牛仔裤男秋款2016男士裤子男装韩版修身直筒小脚裤男潮 可选加绒加厚 蓝色(不加绒) 31"
+		}, {
+			"img": "img/pvi21.png",
+			"title": "刺金时代 牛仔裤男 2016男士修身韩版小脚裤青春休闲简单款男装 复古蓝色 32"
+		}, {
+			"img": "img/pvi22.png",
+			"title": "巢派牛仔裤男加绒加厚修身2016秋冬新款韩版弹力小脚裤 蓝色常规款3037 30(2尺3)"
+		}, {
+			"img": "img/pvi23.png",
+			"title": "领般 【经典弹力】牛仔裤男修身商务青年英伦休闲裤男裤秋季牛仔百搭秋冬棉大码长裤可选加绒款 韩版休闲 5803 牛仔蓝 29"
+		}, {
+			"img": "img/pvi24.png",
+			"title": "巢派牛仔裤男加绒加厚修身2016秋冬新款韩版弹力小脚裤 2032蓝色常规款 34(腰围2尺7)"
+		}, {
+			"img": "img/pvi25.png",
+			"title": "BROWNEFOX 钱包 长款真皮钱夹皮夹手机包复古油蜡时尚多卡位男士钱包手包 QB6039复古油蜡深棕色"
+		}, {
+			"img": "img/pvi26.png",
+			"title": "七匹狼（SEPTWOLVES）钱包男士短款 时尚头层牛皮革两折竖款票夹多功能驾驶证件夹卡包 3A10236-1 黑色"
+		}, {
+			"img": "img/pvi27.png",
+			"title": "七匹狼（SEPTWOLVES）钱包男士短款 商务头层牛皮横款两折钱夹皮夹多功能票夹男 3A1310185黑色"
+		}, {
+			"img": "img/pvi28.png",
+			"title": "七匹狼 男士小钱包 时尚男式短款头层牛皮两折横款卡包票夹多功能驾驶证件包送朋友礼物 3A1313233-02啡色"
+		}, {
+			"img": "img/pvi29.png",
+			"title": "卓梵 阿玛尼（JOSEPHAMANI）男士钱包真皮长款 短款休闲商务超薄钱夹黄金分割线印花 横款"
+		}, {
+			"img": "img/pvi30.png",
+			"title": "意大利L'ALPINA袋鼠钱包新品男包真牛皮潮流男士钱包竖款卡包钱夹 黑色"
+		}
+	],
+
+	"lq": [
+		{
+			"img": "img/lq1.png",
+			"price": "400",
+			"desc": "仅可购买自营笔记本、游戏本指定商品",
+			"title": "消费满8000元可用",
+			"more": "更多好券"
+		}, {
+			"img": "img/lq2.png",
+			"price": "200",
+			"desc": "仅可购买自营服饰内衣商品",
+			"title": "消费满399元可用",
+			"more": "更多服饰箱包券"
+		}, {
+			"img": "img/lq3.png",
+			"price": "800",
+			"desc": "仅可购买贝因美自营指定商品",
+			"title": "消费满1000元可用",
+			"more": "更多个护母婴券"
+		}, {
+			"img": "img/lq4.png",
+			"price": "100",
+			"desc": "仅可购买白酒部分商品",
+			"title": "消费满199元可用",
+			"more": "更多食品饮料券"
+		}, {
+			"img": "img/lq5.png",
+			"price": "2000",
+			"desc": "仅可购买自营投影机部分指定商品",
+			"title": "消费满10000元可用",
+			"more": "更多数码家电券"
+		}
+	],
+
+	"rec": [
+		"img/rec1.png",
+		"img/rec2.png",
+		"img/rec3.png",
+		"img/rec4.png",
+		"img/rec5.png",
+		"img/rec6.png",
+		"img/rec7.png",
+		"img/rec8.png",
+		"img/rec9.png"
+	],
+
+	"xpz": [
+		"img/xpz1.png",
+		"img/xpz2.png",
+		"img/xpz3.png",
+		"img/xpz4.png",
+		"img/xpz5.png",
+		"img/xpz6.png"
+	],
+
+	"abig": [
+		"img/abig1.png",
+		"img/abig2.png",
+		"img/abig3.png",
+		"img/abig4.png",
+		"img/abig5.png",
+		"img/abig6.png",
+		"img/abig7.png",
+		"img/abig8.png",
+		"img/abig9.png",
+		"img/abig10.png",
+		"img/abig11.png",
+		"img/abig12.png",
+		"img/abig13.png",
+		"img/abig14.png",
+		"img/abig15.png",
+		"img/abig16.png",
+		"img/abig17.png",
+		"img/abig18.png"
+	],
+
+	"pic": [
+		{
+			"img": "img/pic1.png",
+			"desc": "抢无门槛神券",
+			"title": "型男衣橱"
+		}, {
+			"img": "img/pic2.png",
+			"desc": "低至99元",
+			"title": "女神衣橱"
+		}, {
+			"img": "img/pic3.png",
+			"desc": "低至2折",
+			"title": "海量冬装低至2折"
+		}, {
+			"img": "img/pic4.png",
+			"desc": "12.12专场",
+			"title": "品质男鞋"
+		}, {
+			"img": "img/pic5.png",
+			"desc": "爆款低至5折",
+			"title": "美妆馆"
+		}, {
+			"img": "img/pic6.png",
+			"desc": "大牌钜惠购",
+			"title": "面部护肤"
+		}, {
+			"img": "img/pic7.png",
+			"desc": "买三免一",
+			"title": "香水彩妆"
+		}, {
+			"img": "img/pic8.png",
+			"desc": "低至5折",
+			"title": "洗发护发"
+		}
+		, {
+			"img": "img/pic9.png",
+			"desc": "5000减1000",
+			"title": "大家电馆"
+		}, {
+			"img": "img/pic10.png",
+			"desc": "爆款好货 低至79元",
+			"title": "厨卫家装馆"
+		}, {
+			"img": "img/pic11.png",
+			"desc": "领券满500减80元",
+			"title": "豆浆机"
+		}, {
+			"img": "img/pic12.png",
+			"desc": "评价晒单返话费",
+			"title": "加热破壁机"
+		}, {
+			"img": "img/pic13.png",
+			"desc": "Cool 1C  预约抽奖",
+			"title": "新Phone尚"
+		}, {
+			"img": "img/pic14.png",
+			"desc": "购机送 乐视会员",
+			"title": "促销汇"
+		}, {
+			"img": "img/pic15.png",
+			"desc": "360 Q5 直降200",
+			"title": "手机通讯"
+		}, {
+			"img": "img/pic16.png",
+			"desc": "潮机评测",
+			"title": "怎么挑手机"
+		}, {
+			"img": "img/pic17.png",
+			"desc": "抢600元神券",
+			"title": "电脑馆"
 		},{
-		"img":"img/pvi8.png",
-		"title":"窗边的小豆豆（新版）"
+			"img": "img/pic18.png",
+			"desc": "水洗键盘见过吗",
+			"title": "外设装备"
+		}, {
+			"img": "img/pic19.png",
+			"desc": "显示器每满1000减100",
+			"title": "电脑配件"
+		}, {
+			"img": "img/pic20.png",
+			"desc": "最高每满199减100",
+			"title": "办公生活"
+		}, {
+			"img": "img/pic21.png",
+			"desc": "相机在这儿",
+			"title": "影像生活"
+		}, {
+			"img": "img/pic22.png",
+			"desc": "“机”友集中营",
+			"title": "娱乐影音"
+		}, {
+			"img": "img/pic23.png",
+			"desc": "爆款Surface每满千减百",
+			"title": "平板电脑"
+		}, {
+			"img": "img/pic24.png",
+			"desc": "年度精选99元三件",
+			"title": "智能网络"
+		}, {
+			"img": "img/pic25.png",
+			"desc": "新品疯抢",
+			"title": "爆款新品"
+		}, {
+			"img": "img/pic26.png",
+			"desc": "以旧换新",
+			"title": "旧品折价"
+		}, {
+			"img": "img/pic27.png",
+			"desc": "IT硬货·精品·热销",
+			"title": "3C范儿"
+		}, {
+			"img": "img/pic28.png",
+			"desc": "评测问答 玩转潮流",
+			"title": "3C社区"
+		}, {
+			"img": "img/pic29.png",
+			"desc": "大牌钜惠",
+			"title": "运动"
+		}, {
+			"img": "img/pic30.png",
+			"desc": "秋冬尚新",
+			"title": "户外"
+		}, {
+			"img": "img/pic31.png",
+			"desc": "打造好身材",
+			"title": "健身"
+		}, {
+			"img": "img/pic32.png",
+			"desc": "自由出行",
+			"title": "骑行"
+		}, {
+			"img": "img/pic33.png",
+			"desc": "5件5折",
+			"title": "火锅，燥起来"
+		}, {
+			"img": "img/pic34.png",
+			"desc": "牛奶买三免一",
+			"title": "牛奶大促"
+		}, {
+			"img": "img/pic35.png",
+			"desc": "好物推荐",
+			"title": "休闲零食"
+		}, {
+			"img": "img/pic36.png",
+			"desc": "满199减100",
+			"title": "中外名酒"
 		},{
-		"img":"img/pvi9.png",
-		"title":"宝宝好品格培养经典童话(套装共10册)"
+			"img": "img/pic37.png",
+			"desc": "霸道总裁教你做菜",
+			"title": "东家菜"
 		},{
-		"img":"img/pvi10.png",
-		"title":"哈利·波特与被诅咒的孩子"
+			"img": "img/pic38.png",
+			"desc": "丰富好味轻松品尝",
+			"title": "“0”元试吃"
 		},{
-		"img":"img/pvi11.png",
-		"title":"动物小说大王沈石溪·品藏书系（第2季）（套装全4册）"
+			"img": "img/pic39.png",
+			"desc": "进口奶粉低价持续",
+			"title": "奶粉辅食"
 		},{
-		"img":"img/pvi12.png",
-		"title":"罗尔德·达尔作品典藏：查理和巧克力工厂"
+			"img": "img/pic40.png",
+			"desc": "低至五折",
+			"title": "尿裤湿巾"
 		},{
-		"img":"img/pvi13.png",
-		"title":"感受潮约 冬季男士加绒休闲裤男修身直筒韩版加厚男裤保暖冬款青年裤子冬天 8006黑色加绒 30(2尺3)"
+			"img": "img/pic41.png",
+			"desc": "爆款抢不停",
+			"title": "玩具乐器"
 		},{
-		"img":"img/pvi14.png",
-		"title":"花花公子（PLAYBOY ICON）男士磨毛修身弹力休闲裤男裤2016秋冬新款 M701 黑色 35"
+			"img": "img/pic42.png",
+			"desc": "低至9.9元",
+			"title": "陪伴宝宝"
 		},{
-		"img":"img/pvi15.png",
-		"title":"HAUTTON 休闲裤男士2016秋冬季新款修身韩版直筒免烫商务职业小脚长西裤子男裤 黑色加厚 31"
+			"img": "img/pic43.png",
+			"desc": "跨店3件8折",
+			"title": "家装建材"
 		},{
-		"img":"img/pvi16.png",
-		"title":"丹顿公子【弹力舒适】棉质男士休闲裤男 英伦修身直筒长裤商务西裤韩版牛仔蓝男裤 时尚休闲 981 蓝色 32"
+			"img": "img/pic44.png",
+			"desc": "领券199减100",
+			"title": "厨具品类日"
 		},{
-		"img":"img/pvi17.png",
-		"title":"AR 休闲裤男2016秋冬新款商务直筒修身弹力韩版长裤男士 藏青色 31(2.4尺)"
+			"img": "img/pic45.png",
+			"desc": "满1000减100",
+			"title": "家具新品"
 		},{
-		"img":"img/pvi18.png",
-		"title":"潮至 休闲裤男秋款2016新款加绒休闲裤 藏青色加绒 29"
+			"img": "img/pic46.png",
+			"desc": "满500减150",
+			"title": "家纺日用"
 		},{
-		"img":"img/pvi19.png",
-		"title":"king booker牛仔裤男弹力修身直筒商务休闲牛仔中腰男裤 3 31(腰围2尺4)"
+			"img": "img/pic47.png",
+			"desc": "好书盘点",
+			"title": "图书排行榜"
 		},{
-		"img":"img/pvi20.png",
-		"title":"VKE  牛仔裤男秋款2016男士裤子男装韩版修身直筒小脚裤男潮 可选加绒加厚 蓝色(不加绒) 31"
+			"img": "img/pic48.png",
+			"desc": "每满99减30",
+			"title": "特色书店"
 		},{
-		"img":"img/pvi21.png",
-		"title":"刺金时代 牛仔裤男 2016男士修身韩版小脚裤青春休闲简单款男装 复古蓝色 32"
+			"img": "img/pic49.png",
+			"desc": "每满150减50",
+			"title": "文学馆"
 		},{
-		"img":"img/pvi22.png",
-		"title":"巢派牛仔裤男加绒加厚修身2016秋冬新款韩版弹力小脚裤 蓝色常规款3037 30(2尺3)"
+			"img": "img/pic50.png",
+			"desc": "每满150减50",
+			"title": "童书馆"
 		},{
-		"img":"img/pvi23.png",
-		"title":"领般 【经典弹力】牛仔裤男修身商务青年英伦休闲裤男裤秋季牛仔百搭秋冬棉大码长裤可选加绒款 韩版休闲 5803 牛仔蓝 29"
+			"img": "img/pic51.png",
+			"desc": "低价好物",
+			"title": "电子电器"
 		},{
-		"img":"img/pvi24.png",
-		"title":"巢派牛仔裤男加绒加厚修身2016秋冬新款韩版弹力小脚裤 2032蓝色常规款 34(腰围2尺7)"
+			"img": "img/pic52.png",
+			"desc": "应季保暖",
+			"title": "装饰自驾"
 		},{
-		"img":"img/pvi25.png",
-		"title":"BROWNEFOX 钱包 长款真皮钱夹皮夹手机包复古油蜡时尚多卡位男士钱包手包 QB6039复古油蜡深棕色"
+			"img": "img/pic53.png",
+			"desc": "行车养护",
+			"title": "系统养护"
 		},{
-		"img":"img/pvi26.png",
-		"title":"七匹狼（SEPTWOLVES）钱包男士短款 时尚头层牛皮革两折竖款票夹多功能驾驶证件夹卡包 3A10236-1 黑色"
+			"img": "img/pic54.png",
+			"desc": "轻松购车",
+			"title": "易车"
 		},{
-		"img":"img/pvi27.png",
-		"title":"七匹狼（SEPTWOLVES）钱包男士短款 商务头层牛皮横款两折钱夹皮夹多功能票夹男 3A1310185黑色"
+			"img": "img/pic55.png",
+			"desc": "英雄联盟正版周边",
+			"title": "虚拟充值"
 		},{
-		"img":"img/pvi28.png",
-		"title":"七匹狼 男士小钱包 时尚男式短款头层牛皮两折横款卡包票夹多功能驾驶证件包送朋友礼物 3A1313233-02啡色"
+			"img": "img/pic56.png",
+			"desc": "免费试用",
+			"title": "游戏社区"
 		},{
-		"img":"img/pvi29.png",
-		"title":"卓梵 阿玛尼（JOSEPHAMANI）男士钱包真皮长款 短款休闲商务超薄钱夹黄金分割线印花 横款"
+			"img": "img/pic57.png",
+			"desc": "领券满199减100",
+			"title": "优选机票"
 		},{
-		"img":"img/pvi30.png",
-		"title":"意大利L'ALPINA袋鼠钱包新品男包真牛皮潮流男士钱包竖款卡包钱夹 黑色"
-		}],
-		
-		"lq":[{
-		"img":"img/lq1.png",
-		"price":"400",
-		"desc":"仅可购买自营笔记本、游戏本指定商品",
-		"title":"消费满8000元可用",
-		"more":"更多好券"
+			"img": "img/pic58.png",
+			"desc": "最高立减500元",
+			"title": "品质酒店"
 		},{
-		"img":"img/lq2.png",
-		"price":"200",
-		"desc":"仅可购买自营服饰内衣商品",
-		"title":"消费满399元可用",
-		"more":"更多服饰箱包券"
+			"img": "img/pic59.png",
+			"desc": "1元秒杀",
+			"title": "键盘电脑"
 		},{
-		"img":"img/lq3.png",
-		"price":"800",
-		"desc":"仅可购买贝因美自营指定商品",
-		"title":"消费满1000元可用",
-		"more":"更多个护母婴券"
-		},{
-		"img":"img/lq4.png",
-		"price":"100",
-		"desc":"仅可购买白酒部分商品",
-		"title":"消费满199元可用",
-		"more":"更多食品饮料券"
-		},{
-		"img":"img/lq5.png",
-		"price":"2000",
-		"desc":"仅可购买自营投影机部分指定商品",
-		"title":"消费满10000元可用",
-		"more":"更多数码家电券"
-		}],
-		
-		"rec":["img/rec1.png","img/rec2.png","img/rec3.png","img/rec4.png","img/rec5.png","img/rec6.png"],
-		
-		"xpz":["img/xpz1.png","img/xpz2.png","img/xpz3.png","img/xpz4.png","img/xpz5.png","img/xpz6.png"],
-		
-		"abig":["img/abig1.png","img/abig2.png"],
-		
-		"pic":[{
-		"img":"img/pic1.png",
-		"desc":"抢无门槛神券",
-		"title":"型男衣橱"
-		},{
-		"img":"img/pic2.png",
-		"desc":"低至99元",
-		"title":"女神衣橱"
-		},{
-		"img":"img/pic3.png",
-		"desc":"低至2折",
-		"title":"海量冬装低至2折"
-		},{
-		"img":"img/pic4.png",
-		"desc":"12.12专场",
-		"title":"品质男鞋"
-		},{
-		"img":"img/pic5.png",
-		"desc":"爆款低至5折",
-		"title":"美妆馆"
-		},{
-		"img":"img/pic6.png",
-		"desc":"大牌钜惠购",
-		"title":"面部护肤"
-		},{
-		"img":"img/pic7.png",
-		"desc":"买三免一",
-		"title":"香水彩妆"
-		},{
-		"img":"img/pic8.png",
-		"desc":"低至5折",
-		"title":"洗发护发"
-		}],
-		
-		"pt":["img/pt1.png","img/pt2.png","img/pt3.png","img/pt4.png","img/pt5.png","img/pt6.png"]
-		
+			"img": "img/pic60.png",
+			"desc": "Xbox One S",
+			"title": "0元试用"
+		}
+	],
+
+	"pt": [
+		"img/pt1.png",
+		"img/pt2.png",
+		"img/pt3.png",
+		"img/pt4.png",
+		"img/pt5.png",
+		"img/pt6.png",
+		"img/pt7.png",
+		"img/pt8.png",
+		"img/pt9.png",
+		"img/pt10.png",
+		"img/pt11.png",
+		"img/pt12.png",
+		"img/pt13.png",
+		"img/pt14.png",
+		"img/pt15.png",
+		"img/pt16.png",
+		"img/pt17.png",
+		"img/pt18.png",
+		"img/pt19.png",
+		"img/pt20.png",
+		"img/pt21.png",
+		"img/pt22.png",
+		"img/pt23.png",
+		"img/pt24.png",
+		"img/pt25.png",
+		"img/pt26.png",
+		"img/pt27.png",
+		"img/pt28.png",
+		"img/pt29.png",
+		"img/pt30.png",
+		"img/pt31.png",
+		"img/pt32.png",
+		"img/pt33.png",
+		"img/pt34.png",
+		"img/pt35.png",
+		"img/pt36.png",
+		"img/pt37.png",
+		"img/pt38.png",
+		"img/pt39.png",
+		"img/pt40.png",
+		"img/pt41.png",
+		"img/pt42.png",
+		"img/pt43.png",
+		"img/pt44.png",
+		"img/pt45.png",
+		"img/pt46.png",
+		"img/pt47.png",
+		"img/pt48.png"
+	]
 }
 
