@@ -1,76 +1,5 @@
-	//	-------------------------地方出现了----------------------	
-	(function() {
-		var timer = null;
-		$('.places').on('mouseover', function() {
-			clearTimeout(timer);
-			$(this).css('background', 'white');
-			$('.dorpdown-layer').show();
-		});
-		$('.places').on('mouseout', function() {
-			timer = setTimeout(function() {
-				$('.places').css('background', '#E3E4E5');
-				$('.dorpdown-layer').hide();
-			}, 100)
-		});
-		$('.dorpdown-layer').on('mouseover', function() {
-			clearTimeout(timer);
-			$('.places').css('background', 'white');
-			$('.dorpdown-layer').show();
-		});
-		$('.dorpdown-layer').on('mouseout', function() {
-			timer = setTimeout(function() {
-				$('.places').css('background', '#E3E4E5');
-				$('.dorpdown-layer').hide();
-			}, 100)
-		});
-		$('.selected').on('click', function() {
-
-			$(this).css({
-				background: "red",
-				color: "white"
-			}).parent().siblings().find('a').css({
-				background: "none",
-				color: "#999"
-			});
-			$('.palce-s').html($(this).html())
-			$('.dorpdown-layer').hide();
-			$('.places').css('background', '#E3E4E5');
-		});
-	})();
-
-	//	-------------------------我的京东出现了----------------------
-	(function() {
-		$('#myjd').hover(function() {
-			$(this).css('background', 'white');
-			$('.myjd-info').show();
-		}, function() {
-			$('#myjd').css('background', '#E3E4E5');
-			$('.myjd-info').hide();
-		});
-	})();
-
-	//	-------------------------客服服务出现了----------------------
-	(function() {
-		$('#service').hover(function() {
-			$(this).css('background', 'white');
-			$('.services').show();
-		}, function() {
-			$(this).css('background', '#E3E4E5');
-			$('.services').hide();
-		});
-	})();
-
-	//	-------------------------网站导航出现了----------------------
-	(function() {
-		$('#w-nva').hover(function() {
-			$(this).css('background', 'white');
-			$('.w-nav').show();
-		}, function() {
-			$(this).css('background', '#E3E4E5');
-			$('.w-nav').hide();
-		})
-	})();
-
+//	 -----------------------top------------------------------
+	$('#jd-Top').load('html/top.html');
 	//	   ---------------------家用电器出现了-----------------------
 	(function() {
 		var timer = null;
@@ -430,55 +359,65 @@
 	})();
 	//	---------------------这是爱生活阶段---------------------------
 	(function() {
-		$.ajax({
-				type: "get",
-				url: "json/index.json",
-				async: true
-			})
-			.done(function(data) {
-				$('.pt_cover_img').each(function(i) {
-					$(this).attr('src', data.abig[i]);
-				});
-				$('.pt_cover_img').hover(function() {
-					$(this).stop().animate({
-						left: -10
-					}, 150)
-				}, function() {
-					$(this).stop().animate({
-						left: 0
-					}, 150)
-				});
-				$('.pt_bi_img').each(function(i) {
-					$(this).attr('src', data.pic[i].img);
-				});
-				$('.pt_bi_img').hover(function() {
-					$(this).stop().animate({
-						right: 8
-					}, 150)
-				}, function() {
-					$(this).stop().animate({
-						right: 0
-					}, 150)
-				});
-				$('.pt_bi_tit').each(function(i) {
-					$(this).html(data.pic[i].title);
-				});
-				$('.pt_bi_promo').each(function(i) {
-					$(this).html(data.pic[i].desc);
-				});
-				$('.pt_more_img').each(function(i) {
-					$(this).attr('src', data.pt[i]);
-				});
-				$('.pt_more_img').hover(function() {
-					$(this).stop().animate({
-						right: 10
-					}, 150)
-				}, function() {
-					$(this).stop().animate({
-						right: 0
-					}, 150)
-				});
-			});
+		var bstop = true;
+		$(window).on('scroll load', function() {
+			var $scrolltop = $(window).scrollTop();
+			var $height = $(window).height();
+			var $top = $('#love-inner').offset().top + 200;
+			if($top < $scrolltop + $height) {
+				if(bstop) {
+					$.ajax({
+						type: "get",
+						url: "json/index.json",
+						beforeSend: function() {}
+					}).done(function(data) {
+						$('.pt_cover_img').each(function(i) {
+							$(this).attr('src', data.abig[i]);
+						});
+						$('.pt_cover_img').hover(function() {
+							$(this).stop().animate({
+								left: -10
+							}, 150)
+						}, function() {
+							$(this).stop().animate({
+								left: 0
+							}, 150)
+						});
+						$('.pt_bi_img').each(function(i) {
+							$(this).attr('src', data.pic[i].img);
+						});
+						$('.pt_bi_img').hover(function() {
+							$(this).stop().animate({
+								right: 8
+							}, 150)
+						}, function() {
+							$(this).stop().animate({
+								right: 0
+							}, 150)
+						});
+						$('.pt_bi_tit').each(function(i) {
+							$(this).html(data.pic[i].title);
+						});
+						$('.pt_bi_promo').each(function(i) {
+							$(this).html(data.pic[i].desc);
+						});
+						$('.pt_more_img').each(function(i) {
+							$(this).attr('src', data.pt[i]);
+						});
+						$('.pt_more_img').hover(function() {
+							$(this).stop().animate({
+								right: 10
+							}, 150)
+						}, function() {
+							$(this).stop().animate({
+								right: 0
+							}, 150)
+						});
+						bstop = false;
+					})
+				}
+			}
+		});
 	})();
 	//	---------------------这是多图轮播---------------------------
 	(function() {
@@ -517,99 +456,103 @@
 		}
 	})();
 	//	---------------------这是家电手机阶段---------------------------
-	(function () {
+	(function() {
 		$.ajax({
-			type:"get",
-			url:"html/costume.html",
-			async:true
-		})
-		.done(function  (data) {
-			$('#costume').append(data);
-		});
+				type: "get",
+				url: "html/costume.html",
+				async: true
+			})
+			.done(function(data) {
+				$('#costume').append(data);
+			});
 	})();
 	//	---------------------这是3C爱吃阶段---------------------------
-	(function () {
+	(function() {
 		$.ajax({
-			type:"get",
-			url:"html/eat.html",
-			async:true
-		})
-		.done(function  (data) {
-			$('#eat').append(data);
-		});
+				type: "get",
+				url: "html/eat.html",
+				async: true
+			})
+			.done(function(data) {
+				$('#eat').append(data);
+			});
 	})();
 	//	---------------------这是母婴图书阶段---------------------------
-	(function () {
+	(function() {
 		$.ajax({
-			type:"get",
-			url:"html/book.html",
-			async:true
-		})
-		.done(function  (data) {
-			$('#book').append(data);
-		});
+				type: "get",
+				url: "html/book.html",
+				async: true
+			})
+			.done(function(data) {
+				$('#book').append(data);
+			});
 	})();
 	//	---------------------这是虚拟阶段---------------------------
-	(function () {
+	(function() {
 		$.ajax({
-			type:"get",
-			url:"html/game.html",
-			async:true
-		})
-		.done(function  (data) {
-			$('#game').append(data);
-		});
+				type: "get",
+				url: "html/game.html",
+				async: true
+			})
+			.done(function(data) {
+				$('#game').append(data);
+			});
 	})();
 	//	---------------------这是底部阶段---------------------------
-	(function () {
+	(function() {
 		$.ajax({
-			type:"get",
-			url:"html/foot.html",
-			async:true
-		})
-		.done(function  (data) {
-			$('.Mod').append(data);
+				type: "get",
+				url: "html/foot.html",
+				async: true
+			})
+			.done(function(data) {
+				$('.Mod').append(data);
+			});
+	})();
+	//	--------------------------固定栏-----------------------------------
+	(function() {
+		$(document).on('scroll', function() {
+			if($(document).scrollTop() > 800) {
+				$('#search').stop().animate({
+					top: 0
+				}, 200);
+			} else {
+				$('#search').stop().animate({
+					top: -50
+				}, 200);
+			}
 		});
 	})();
-//	--------------------------固定栏-----------------------------------
-		(function () {
-			$(document).on('scroll',function  () {
-				if ($(document).scrollTop()>800) {
-					$('#search').stop().animate({top:0},200);
-				}else{
-					$('#search').stop().animate({top:-50},200);
+	//	--------------------------楼梯-----------------------------------
+	(function() {
+		$(window).scroll(function() {
+			var scrolltop = $(this).scrollTop();
+			if(scrolltop >= 1600) {
+				$('#loutinav').show();
+			} else {
+				$('#loutinav').hide();
+			}
+			$('.louti').each(function(i) {
+				var $loutitop = $('.louti').eq(i).offset().top + 250;
+				if($loutitop > scrolltop) {
+					$('#loutinav li').removeClass('active');
+					$('#loutinav li').eq(i).addClass('active');
+					return false;
 				}
 			});
-		})();
-//	--------------------------楼梯-----------------------------------
-		(function () {
-				$(window).scroll(function(){
-            var scrolltop=$(this).scrollTop();
-            if(scrolltop>=1600){
-                $('#loutinav').show();
-            }else{
-                $('#loutinav').hide();
-            }
-             $('.louti').each(function(){
-                var $loutitop=$('.louti').eq($(this).index()).offset().top+350;
-                if($loutitop>scrolltop){
-                    $('#loutinav li').removeClass('active');
-                    $('#loutinav li').eq($(this).index()).addClass('active');
-                    return false;
-                }
-            });
-        });
-            $('#loutinav li').not('.llast').click(function(){
-            $(this).addClass('active').siblings('li').removeClass('active');
-            var $loutitop=$('.louti').eq($(this).index()).offset().top;
-            $('html,body').stop(true).animate({
-                scrollTop:$loutitop-50
-            },600)
-        })
-            $('.llast').click(function(){
-            $('html,body').animate({
-                scrollTop:0
-            },600);
-        });
-			
-		})();
+		});
+		$('#loutinav li').not('.llast').click(function() {
+			$(this).addClass('active').siblings('li').removeClass('active');
+			var $loutitop = $('.louti').eq($(this).index()).offset().top;
+			$('html,body').stop(true).animate({
+				scrollTop: $loutitop - 50
+			}, 600)
+		})
+		$('.llast').click(function() {
+			$('html,body').animate({
+				scrollTop: 0
+			}, 600);
+		});
+
+	})();

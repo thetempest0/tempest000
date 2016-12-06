@@ -1,0 +1,467 @@
+body {
+	font: 12px/1.5 \5b8b\4f53, Arial, sans-serif;
+	color: #666;
+	background: white;
+	font-family: "微软雅黑";
+}
+
+a {
+	color: #999;
+	text-decoration: none;
+}
+
+a,
+address,
+b,
+big,
+blockquote,
+body,
+center,
+cite,
+code,
+dd,
+del,
+div,
+dl,
+dt,
+em,
+fieldset,
+font,
+form,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+html,
+i,
+iframe,
+img,
+ins,
+label,
+legend,
+li,
+ol,
+p,
+pre,
+small,
+span,
+strong,
+u,
+ul,
+var {
+	margin: 0;
+	padding: 0
+}
+
+ol,
+ul {
+	list-style: none
+}
+
+img {
+	border: 0;
+	vertical-align: middle
+}
+
+em,
+i,
+u {
+	font-style: normal
+}
+
+.fl {
+	float: left
+}
+
+.fr {
+	float: right
+}
+
+.clearfix:after {
+	content: '\20';
+	clear: both;
+	display: block;
+	height: 0;
+	visibility: hidden;
+}
+
+.al {
+	text-align: left
+}
+
+.ac {
+	text-align: center
+}
+
+.ar {
+	text-align: right
+}
+
+.hide {
+	display: none
+}
+
+.Top {
+	background: #F1F1F1;
+}
+
+.w {
+	width: 990px;
+	margin: 0 auto;
+}
+
+#jd-top {
+	height: 30px;
+	position: relative;
+}
+
+#jd-top a:hover {
+	color: #C81623;
+}
+
+.place {
+	height: 30px;
+	line-height: 30px;
+	float: left;
+	color: #999;
+}
+
+.dorpdown-layer {
+	border: 1px solid #e3e4e5;
+	border-top: 0;
+	display: none;
+	width: 300px;
+	padding: 10px;
+	position: absolute;
+	background: white;
+	left: 208px;
+	top: 30px;
+	z-index: 100;
+}
+
+.item {
+	float: left;
+	width: 60px;
+	padding: 2px 0;
+}
+
+.selected {
+	color: #999;
+	float: left;
+	padding: 0 8px;
+}
+
+.top-ul {
+	float: right;
+}
+
+.top-ul li {
+	float: left;
+	height: 30px;
+	line-height: 30px;
+}
+
+.top-ul .long {
+	width: 1px;
+	height: 10px;
+	background: #ccc;
+	margin: 11px 5px 0;
+}
+
+#login {
+	margin-right: 8px;
+}
+
+.top-ul .style-red {
+	color: red;
+}
+
+.dt {
+	padding-left: 7px;
+	padding-right: 7px;
+}
+
+#myjd {
+	position: relative;
+}
+
+.myjd-info {
+	position: absolute;
+	left: 0;
+	top: 30px;
+	width: 280px;
+	background: white;
+	border: 1px solid #ccc;
+	height: 200px;
+	z-index: 99;
+	border-top: 0;
+	display: none;
+}
+
+.my-user-info {
+	padding: 10px 0 10px 15px;
+	overflow: hidden;
+}
+
+.u-pic {
+	float: left;
+	margin-right: 10px;
+}
+
+.u-pic img {
+	height: 100%;
+	border-radius: 50%;
+	width: 60px;
+	height: 60px;
+}
+
+.u-name {
+	padding: 6px 0 0;
+	font-weight: 700;
+}
+
+.u-extra a,
+.u-extra span {
+	margin-right: 10px;
+}
+
+.otherlist {
+	width: 255px;
+	padding: 0 0 0 15px;
+	margin: 5px 0;
+	overflow: hidden;
+	margin-bottom: 10px;
+}
+
+.fore1 {
+	float: left;
+	width: 126px;
+}
+
+.user-item {
+	line-height: 24px;
+}
+
+#service {
+	position: relative;
+}
+
+.services {
+	position: absolute;
+	right: 0;
+	top: 30px;
+	width: 180px;
+	padding: 10px 0;
+	background: white;
+	z-index: 50;
+	border: 1px solid #ccc;
+	border-top: none;
+	display: none;
+}
+
+.item-client {
+	padding-left: 15px;
+	font-weight: 700;
+	color: #666;
+}
+
+.sv-item {
+	display: inline-block;
+	width: 70px;
+	padding-left: 15px;
+	line-height: 24px;
+}
+
+.item-business {
+	margin-top: 5px;
+	padding-top: 5px;
+	border-top: 1px dotted #eee;
+	padding-left: 15px;
+	font-weight: 700;
+	color: #666;
+	line-height: 24px;
+}
+
+#w-nva {
+	position: relative;
+}
+
+.w-nav {
+	position: absolute;
+	right: 0;
+	top: 30px;
+	width: 1190px;
+	padding: 15px 0;
+	border: 1px solid #ccc;
+	border-top: none;
+	background-color: #fff;
+	z-index: 100;
+	display: none;
+}
+
+.forr {
+	width: 340px;
+	float: left;
+	padding-left: 20px;
+	border-right: 1px solid #eee;
+}
+
+.forr dt {
+	margin-bottom: 5px;
+	font-weight: 700;
+	color: #666;
+}
+
+.forr-item {
+	overflow: hidden;
+	float: left;
+	width: 85px;
+	white-space: nowrap;
+}
+
+.forr2,
+.forr3,
+.forr4 {
+	width: 255px;
+	float: left;
+	padding-left: 20px;
+	border-right: 1px solid #eee;
+}
+
+.cart-logo {
+	padding: 15px 0 10px;
+}
+
+.clogo {
+	float: left;
+	position: relative;
+	width: 270px;
+	padding: 0;
+	z-index: 12;
+	height: 60px;
+}
+
+.dog {
+	display: block;
+	width: 270px;
+	height: 60px;
+	background: url(../img/jd/logo-201305.png)no-repeat;
+}
+
+.link2 {
+	overflow: hidden;
+	display: block;
+	position: absolute;
+	width: 100px;
+	height: 40px;
+	line-height: 99em;
+	top: 8px;
+	right: 0;
+	background: #fff;
+}
+
+.link2 b {
+	display: block;
+	position: absolute;
+	width: 100px;
+	height: 40px;
+	line-height: 99em;
+	top: 0;
+	right: 0;
+	background: url(../img/jd/cart-icon.png)no-repeat white;
+}
+
+.cart-search {
+	float: right;
+	border: 2px solid #c91623;
+	background: #c91623;
+	height: 24px;
+	margin-top: 20px;
+	overflow: hidden;
+}
+
+.itxt {
+	border: 0;
+	height: 18px;
+	line-height: 18px;
+	width: 260px;
+	padding: 3px 5px;
+	background: white;
+}
+
+.button {
+	display: inline-block;
+	vertical-align: top;
+	width: 48px;
+	height: 24px;
+	background: #c91623;
+	text-align: center;
+	color: #fff;
+	font-weight: 700;
+	border: 0;
+}
+
+#container {
+	overflow: hidden;
+}
+
+.cart-empty {
+	height: 98px;
+	padding: 80px 0 120px;
+	color: #333;
+}
+
+.message {
+	height: 98px;
+	padding-left: 341px;
+	background: url(../img/jd/no-login-icon.png) no-repeat 250px 22px;
+}
+
+.message ul {
+	padding-top: 23px;
+}
+
+.message li {
+	line-height: 26px;
+}
+
+.c_txt {
+	font-size: 14px;
+}
+
+.cbtn_a {
+	font-family: arial, "Microsoft YaHei";
+	display: inline-block;
+	height: 25px;
+	line-height: 25px;
+	background-color: #e74649;
+	margin-right: 10px;
+	border-radius: 3px;
+    color: #fff;
+    font-size: 12px;
+    font-weight: 400;
+    padding: 0 10px;
+    vertical-align: middle;
+    cursor: pointer;
+    border: 0;
+    float: none;
+}
+.mod_footer {
+	height: 450px;
+}
+.Top .place{
+	margin-left: 0;
+	background: #F1F1F1;
+}
+.Top .places{
+	border: 0;
+}
+.Top .dorpdown-layer{
+	left: 0;
+}
+.Mod_service{
+	margin-top: 30px;
+	background: #F5F5F5;
+}

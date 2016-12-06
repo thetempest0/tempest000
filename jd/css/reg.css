@@ -1,0 +1,262 @@
+body {
+	font: 12px/1.5 \5b8b\4f53, Arial, sans-serif;
+	color: #666;
+	background: white;
+	font-family: "微软雅黑";
+}
+
+a {
+	color: #999;
+	text-decoration: none;
+}
+
+a,
+address,
+b,
+big,
+blockquote,
+body,
+center,
+cite,
+code,
+dd,
+del,
+div,
+dl,
+dt,
+em,
+fieldset,
+font,
+form,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+html,
+i,
+iframe,
+img,
+ins,
+label,
+legend,
+li,
+ol,
+p,
+pre,
+small,
+span,
+strong,
+u,
+ul,
+var {
+	margin: 0;
+	padding: 0
+}
+
+ol,
+ul {
+	list-style: none
+}
+
+img {
+	border: 0;
+	vertical-align: middle
+}
+
+em,
+i,
+u {
+	font-style: normal
+}
+
+.fl {
+	float: left
+}
+
+.fr {
+	float: right
+}
+.clearfix:after{
+	content:'\20';
+	clear: both;
+	display: block;
+	height: 0;
+	visibility: hidden;
+}
+
+.al {
+	text-align: left
+}
+
+.ac {
+	text-align: center
+}
+
+.ar {
+	text-align: right
+}
+
+.hide {
+	display: none
+}
+.header{
+	height: 110px;
+	background: url(../img/jd/headbg.jpg) repeat-x left bottom;
+}
+.logo-con{
+	width: 1210px;
+	margin:0 auto;
+}
+.logo{
+	width: 160px;
+    height: 50px;
+    float: left;
+    margin-top: 24px;
+    background: url(../img/jd/icon.png) no-repeat;
+}
+.logo-title{
+	float: left;
+    height: 34px;
+    line-height: 34px;
+    font-size: 18px;
+    color: #000;
+    border-left: solid 1px #bbb;
+    margin-left: 25px;
+    padding-left: 25px;
+    margin-top: 34px;
+}
+.have-account{
+	font-size: 16px;
+    float: right;
+    margin-top: 55px;
+    color: #999;
+}
+.container{
+	width: 1210px;
+	margin: 0 auto;
+}
+.main{
+	margin: 50px auto 60px;
+    width: 830px;
+}
+.reg-form{
+	width: 400px;
+	float: left;
+}
+.zhuce{
+	font-family: "Microsoft YaHei","Hiragino Sans GB";
+}
+.form-item{
+	line-height: 52px;
+	position: relative;
+    border: solid 1px #ddd;
+    width: 398px;
+    height: 52px;
+    font-size: 16px;
+}
+.form-item input{
+	margin-left: 40px;
+	width: 230px;
+    height: 40px;
+    line-height: 40px;
+    border: 0;
+    
+}
+input{
+	outline: none;
+}
+.input-tip{
+	color: #c5c5c5;
+    height: 27px;
+    font-size: 12px;
+    padding-top: 5px;
+}
+select{
+	margin-left: 10px;
+	width: 100px;
+	height: 48px;
+	outline: none;
+	border: 0;
+	line-height: 48px;
+	font-size: 16px;
+	font-family: "微软雅黑";
+	color: #666;
+}
+.btn-register{
+	width: 100%;
+    height: 54px;
+    color: #fff;
+    background: #e22;
+    border: 0;
+    font-size: 16px;
+    font-family: "Microsoft YaHei","Hiragino Sans GB";
+}
+.reg-other{
+	float: left;
+    margin-left: 104px;
+    height: 605px;
+    padding-left: 90px;
+    border-left: solid 1px #e6e6e6;
+}
+.phone-fast-reg{
+	background: url(../img/jd/phone.jpg) no-repeat;
+	width:214px;
+	height: 270px;
+}
+.company-reg{
+	width: 160px;
+    height: 60px;
+    margin-top: 50px;
+    border-bottom: solid 1px #ddd;
+    margin-left: 30px;
+}
+.i-company{
+	display: inline-block;
+    width: 30px;
+    height: 29px;
+    vertical-align: middle;
+    margin-right: 15px;
+    background: url(../img/jd/icon.png) no-repeat 0 -50px;
+}
+.inter-cust{
+	width: 160px;
+    margin-left: 30px;
+    margin-top: 30px;
+}
+.inter-cust a{
+	display: block;
+    width: 170px;
+    height: 30px;
+}
+.inter-cust i{
+    height: 30px;
+    vertical-align: text-bottom;
+    float: left;
+    margin-top: 7px;
+}
+.inter-cust .bool{
+	    background-position: -50px -50px;
+}
+.form-footer{
+	width: 1210px;
+	margin: 0 auto;
+	font-size: 12px;
+    text-align: center;
+    border-top: solid 1px #e6e6e6;
+    color: #999;
+    padding-bottom: 30px;
+}
+.mod_copyright_links {
+	margin-top: 30px;
+	text-align: center;
+}
+.mod_copyright_split {
+	margin: 0 10px;
+	color: #ccc;
+}
+.copyright{
+	margin: 20px 0;
+	text-align: center;
+}
