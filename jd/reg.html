@@ -8,7 +8,7 @@
 	<body>
 		<div id="form-header" class="header">
 		<div class="logo-con">
-			<a href="javascript:;" class="logo"></a>
+			<a href="index.html" class="logo"></a>
 			<div class="logo-title">欢 迎 注 册</div>
 			<div class="have-account">已有账号 
 			<a href="logon.html" style="color: #333;">请登录</a>
@@ -18,17 +18,20 @@
 		<div class="container">
 			<div class="main clearfix">
 				<div class="reg-form">
-					<form action="" method="post" class="zhuce">
+					<form  method="post" class="zhuce">
 						<div class="form-item">
-							　用　户　名<input type="text" placeholder="您的账户名和登录名"/>
+							　用　户　名<input type="text" placeholder="您的账户名和登录名" class="userr"/>
+							<i class="i-status"></i>
 						</div>
 						<div class="input-tip"></div>
 						<div class="form-item">
-							　设 置 密 码<input type="text" placeholder="建议至少使用两种字符组合"/>
+							　设 置 密 码<input type="password" placeholder="建议至少使用两种字符组合" class="psdd"/>
+							<i class="i-status"></i>
 						</div>
 							<div class="input-tip"></div>
 						<div class="form-item">
-							　确 认 密 码<input type="text" placeholder="请再次输入密码"/>
+							　确 认 密 码<input type="password" placeholder="请再次输入密码"/>
+							<i class="i-status"></i>
 						</div>
 							<div class="input-tip"></div>
 							<div class="form-item">
@@ -38,10 +41,12 @@
 									<option value="">香港+852</option>
 								</select>
 							　<input type="text" placeholder="建议使用常用手机" style="margin-left:4px;"/>
+							<i class="i-status"></i>
 						</div>
 						<div class="input-tip"></div>
 						<div class="form-item">
-							　验　证　码<input type="text" placeholder="请输入验证码"/>
+							　验　证　码<input type="text" placeholder="请输入验证码" style="width: 150px;"/>
+							<img src="" class="yzm"/>
 						</div>
 						<div class="input-tip"></div>
 						<div class="form-item">
@@ -53,7 +58,7 @@
 							<a href="javascript:;" style="color: #38f;">《京东用户注册协议》</a>
 						</div>
 						<div class="input-tip"></div>
-						<button type="submit" class="btn-register">立即注册</button>
+						<input type="button" class="btn-register" value="立即注册">
 					</form>
 				</div>
 				<div class="reg-other">
@@ -105,5 +110,8 @@
 
 			</div>
 		</div>
+		<script src="js/jquery-1.11.3.js" type="text/javascript" charset="utf-8"></script>
+		<script src="js/cookie.js" type="text/javascript" charset="utf-8"></script>
+		<script src="js/logon.js" type="text/javascript" charset="utf-8"></script>
 	</body>
 </html>

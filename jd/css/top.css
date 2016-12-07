@@ -15,8 +15,8 @@
 
 .place {
 	margin-left: 208px;
-	height: 30px;
-	line-height: 30px;
+	height: 28px;
+	line-height: 28px;
 	float: left;
 	color: #999;
 }
@@ -80,6 +80,7 @@
 .dt {
 	padding-left: 7px;
 	padding-right: 7px;
+	height: 30px;
 }
 
 #myjd {

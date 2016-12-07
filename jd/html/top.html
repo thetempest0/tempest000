@@ -115,8 +115,8 @@
 				</div>
 				<ul class="top-ul">
 					<li id="login">
-						<a href="logon.html">你好，请登录</a>
-						<a href="reg.html" class="style-red">免费注册</a>
+						<a href="logon.html" class="dl">你好，请登录</a>
+						<a href="reg.html" class="style-red tc">免费注册</a>
 					</li>
 					<li class="long"></li>
 					<li></li>
@@ -529,5 +529,17 @@
 						$(this).css('background', '#E3E4E5');
 						$('.w-nav').hide();
 					})
+				})();
+				
+				(function () {
+					if(getCookie('user1') && getCookie('pass1')){
+						$('.dl').html(getCookie('user1'));
+						$('.tc').html("退出");
+						$('.tc').attr('href','index.html');
+						$('.tc').on('click',function  () {
+							delCookie('user1');
+							delCookie('pass1');
+						});
+					}
 				})();
 			</script>

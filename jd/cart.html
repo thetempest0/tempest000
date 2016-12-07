@@ -3,7 +3,6 @@
 <head>
 	<meta charset="UTF-8" />
 	<title>购物车</title>
-	<link rel="stylesheet" type="text/css" href="css/cart2.css"/>
 	<link rel="stylesheet" type="text/css" href="css/cart.css"/>
 	<link rel="stylesheet" type="text/css" href="css/top.css"/>
 </head>
@@ -43,8 +42,8 @@
 					</div>
 				</div>
 				<!--购物车列表头部-->
-				<div class="cart-wrap">
-					<div class="w" style="display: none;">
+				<div class="cart-wrap" style="display: none;">
+					<div class="w">
 						<div id="jd-cart">
 							<div class="cartmain">
 								<div class="cart-thead">
@@ -80,7 +79,7 @@
 														<div class="cell b-goods">
 															<div class="goods-name">
 																<div class="goods-pic">
-																	<a href=""><img src="../img/images/1.jpg" alt="" /></a>
+																	<a href=""><img src="img/images/1.jpg" alt="" /></a>
 																</div>
 																<div class="goods-msg">
 																	<div class="goods-d-info">
@@ -121,6 +120,9 @@
 							<div class="toolbar-right">
 								<div class="btn-area">
 									<a href=""></a>
+								</div>
+								<div class="submit-btnn" style="float: right;">
+									<a href="javascript:;">去结算</a>
 								</div>
 								<div class="price-sum">
 									<span class="txt">总价（不含运费）：</span>
@@ -366,6 +368,7 @@
 			</div>
 	</div>
 	<script src="js/jquery-1.11.3.js" type="text/javascript" charset="utf-8"></script>
+	<script src="js/cookie.js" type="text/javascript" charset="utf-8"></script>
 	<script src="js/cart.js" type="text/javascript" charset="utf-8"></script>
 </body>
 </html>

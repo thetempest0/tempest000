@@ -181,7 +181,7 @@
 			})
 	})();
 
-	//	---------------------这是秒杀阶段-----------------------
+	//	---------------------这里是发现好货阶段-----------------------
 	(function() {
 		$.ajax({
 				url: "json/index.json",
@@ -369,7 +369,11 @@
 					$.ajax({
 						type: "get",
 						url: "json/index.json",
-						beforeSend: function() {}
+						beforeSend: function() {
+							$('.pt_cover_img').attr('src',"img/jd/loader.gif");
+							$('.pt_bi_img').attr('src',"img/jd/loader.gif");
+							$('.pt_more_img').attr('src',"img/jd/loader.gif");
+						}
 					}).done(function(data) {
 						$('.pt_cover_img').each(function(i) {
 							$(this).attr('src', data.abig[i]);
