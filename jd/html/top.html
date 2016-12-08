@@ -484,7 +484,7 @@
 						}, 100)
 					});
 					$('.selected').on('click', function() {
-
+						addCookie('place',$(this).html(),7)
 						$(this).css({
 							background: "red",
 							color: "white"
@@ -496,6 +496,22 @@
 						$('.dorpdown-layer').hide();
 						$('.places').css('background', '#E3E4E5');
 					});
+					if(getCookie('place')){
+						$('.palce-s').html(getCookie('place'));
+						$('.item').eq(0).find('a').css({
+							background: "none",
+							color: "#999"
+						})
+						$('.item a').each(function  () {
+							if($(this).html()==$('.palce-s').html()){
+								$(this).css({
+									background: "red",
+							color: "white"
+								})
+								
+							}
+						})
+					}
 				})();
 
 				//	-------------------------我的京东出现了----------------------

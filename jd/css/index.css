@@ -2386,3 +2386,15 @@ u {
 .weizhi8 {
 	background-position: -50px -150px;
 }
+.jdhy{
+	display: none;
+	position: absolute;
+	height: 35px;
+	width: 100px;
+	background: red;
+	border-radius: 5px;
+	left: 0px;
+	line-height: 35px;
+	color: white;
+	z-index: 1;
+}

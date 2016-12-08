@@ -615,7 +615,7 @@ i{cursor: default;}
 	color: white;
 }
 .Top {
-	background: #F1F1F1;
+	background: rgb(227, 228, 229);
 }
 
 .w {
@@ -964,7 +964,6 @@ i{cursor: default;}
 }
 .Top .place{
 	margin-left: 0;
-	background: #F1F1F1;
 }
 .Top .places{
 	border: 0;

@@ -1,7 +1,6 @@
 $('.Top').load('html/top.html');
 
 
-//获取数据
 $.ajax({
     url: 'json/cart.json',
     async:false,
@@ -12,7 +11,7 @@ $.ajax({
             $('.loadt').eq(i).html(data.piclist[i].title);
             $('.loadpcp').eq(i).html(data.piclist[i].price);
         }
-        if (getCookie('cartsid')) { //遍历已经存在的cookie
+        if (getCookie('cartsid')) { 
         	$('.cart-empty').hide();
             var s = getCookie('cartsid').split(',');
             var n = getCookie('cartnum').split(',');
@@ -24,13 +23,13 @@ $.ajax({
 })
 
 
-function cookiearr() { //把cookie值转换成数组(思路：通过arrsearch函数判断对应的cookie值是否已经存在，而且cookie是一个数组)
-    if (getCookie('cartsid')) { //cartindex 存放cookie的索引名称
+function cookiearr() { 
+    if (getCookie('cartsid')) { 
         sidarr = getCookie('cartsid').split(',');
     } else {
         sidarr = [];
     }
-    if (getCookie('cartnum')) { //cartnum   存放数量的cookie名称
+    if (getCookie('cartnum')) { 
         numarr = getCookie('cartnum').split(',');
     } else {
         numarr = []
@@ -43,7 +42,7 @@ $('.p-btn a').on('click', function() {
 	
     cookiearr();
     var sid = $(this).parents('.goodsinfo').find('.p-img').find('img').attr('sid');
-    if ($.inArray(sid, sidarr) != -1) { //加数量累加
+    if ($.inArray(sid, sidarr) != -1) { 
         $('.goods-item:visible').each(function() {
             if (sid == $(this).find('.goods-pic').find('img').attr('sid')) {
                 var $value = $(this).find('.quantity-form').children('input').val();
@@ -55,7 +54,7 @@ $('.p-btn a').on('click', function() {
                 addCookie('cartnum', numarr.toString(), 7);
             }
         });
-    } else { //添加id，商品的标识
+    } else { 
         sidarr.push(sid);
         addCookie('cartsid', sidarr.toString(), 7);
         numarr.push(1);

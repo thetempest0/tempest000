@@ -6,7 +6,7 @@ $('.login-tab').on('click', function() {
 
 (function() {
 	//		----------------------用户名-----------------------------
-	var uname_reg = /^[\u4e00-\u9fa5]{4,20}$|^[\dA-Za-z_\-]{4,20}$/;
+	var uname_reg = /^[\u4e00-\u9fa5]{4,20}$|^[\dA-Za-z_\-]{4,20}$|^[\u4e00-\u9fa5\w\-]{4,20}$/;
 	var uname_ok = false;
 	$('.form-item').eq(0).find('input').on('focus', function() {
 		$(this).attr('placeholder', '');
@@ -70,6 +70,35 @@ $('.login-tab').on('click', function() {
 		}
 	});
 	$('.form-item').eq(1).find('input').on('input', function() {
+		var bia = 0;
+		var yz = /[0-9]/g;
+		var yz2 = /[A-Za-z\_]/g;
+		var yz3 = /[\W]/g;
+		if($(this).val().length > 5 && $(this).val().length < 20) {
+			if(yz.test($(this).val())) {
+				bia++;
+			};
+			if(yz2.test($(this).val())) {
+				bia++;
+			};
+			if(yz3.test($(this).val())) {
+				bia++;
+			};
+			switch(bia) {
+				case 1:
+					$('.input-tip').eq(1).html("　　有被盗风险, 建议使用字母, 数字和符号两种及以上组合");
+					$('.input-tip').eq(1).css('color', 'red');
+					break;
+				case 2:
+					$('.input-tip').eq(1).html("　　安全强度适中，可以使用三种以上的组合来提高安全强度");
+					$('.input-tip').eq(1).css('color', '#FF9911');
+					break;
+				case 3:
+					$('.input-tip').eq(1).html("　　你的密码很安全");
+					$('.input-tip').eq(1).css('color', 'green');
+					break;
+			}
+		}
 		$('.i-status').eq(1).hide();
 
 	});
@@ -174,57 +203,72 @@ $('.login-tab').on('click', function() {
 					$('.input-tip').eq(4).html('');
 				}
 			});
+			
+//	---------------------手机验证号-----------------------
+				$('.btn-phonecode').on('click',function  () {
+					var code=Math.floor(Math.random() * 6);
+					$('.code').val(data.phonecode[code]);
+				});
+			
+		});
+		
+	
+		
+		
+		$('.agree').on('click',function  () {
+			if ($(this).attr('checked')) {
+				$(this).attr('checked', false); 
+			} else{
+				$(this).attr('checked', true);  
+			}
 		});
 
-	//		----------------------------提交-------------------------
+	//     ----------------------注册cookie---------------------
 
-	$('.btn-register').on('click', function() {
-		if(uname_ok && pwd_ok && pwdtwo_ok && phone_ok && yzm_ok) {
-			//        ----------------------注册cookie---------------------
-
-			(function() {
-				function arrsearch(value, arr) {
-					for(var i = 0; i < arr.length; i++) {
-						if(value == arr[i]) {
-							return true;
-						}
-					}
-					return false;
+	(function() {
+		function arrsearch(value, arr) {
+			for(var i = 0; i < arr.length; i++) {
+				if(value == arr[i]) {
+					return true;
 				}
-				var arr = [];
-				$('.btn-register').on('click', function() {
-					if(getCookie('usermore') == undefined) {
-						arr.push($('.userr').val(), $('.psdd').val());
-						if($('.userr').val() == '') {
-							$('.input-tip').eq(0).html("　　用户名不能为空");
-							$('.input-tip').eq(0).css('color', 'red');
-							$('.form-item').eq(0).css('border-color', 'red');
-						} else if($('.psdd').val() == '') {
-							$('.input-tip').eq(1).html("　　密码不能为空");
-							$('.input-tip').eq(1).css('color', 'red');
-							$('.form-item').eq(1).css('border-color', 'red');
-						} else {
-							addCookie('usermore', arr.toString(), 7);
-							window.location = 'logon.html';
-						}
-					} else {
-						arr = getCookie("usermore").split(',');
-						if(arrsearch($('.userr').val(), arr)) {
-							$('.input-tip').eq(0).html("　　用户名已存在");
-							$('.input-tip').eq(0).css('color', 'red');
-							$('.form-item').eq(0).css('border-color', 'red');
-						} else {
-							arr.push($('.userr').val(), $('.psdd').val());
-							addCookie('usermore', arr.toString(), 7);
-							window.location = 'logon.html';
-						}
-					}
-				});
-			})();
-		} else {
-			alert('请补全或完善信息');
+			}
+			return false;
 		}
-	});
+		var arr = [];
+		$('.btn-register').on('click', function() {
+			if($('.agree').attr('checked') && uname_ok && pwd_ok && pwdtwo_ok && phone_ok && yzm_ok) {
+				if(getCookie('usermore') == undefined) {
+					arr.push($('.userr').val(), $('.psdd').val());
+					if($('.userr').val() == '') {
+						$('.input-tip').eq(0).html("　　用户名不能为空");
+						$('.input-tip').eq(0).css('color', 'red');
+						$('.form-item').eq(0).css('border-color', 'red');
+					} else if($('.psdd').val() == '') {
+						$('.input-tip').eq(1).html("　　密码不能为空");
+						$('.input-tip').eq(1).css('color', 'red');
+						$('.form-item').eq(1).css('border-color', 'red');
+					} else {
+						addCookie('usermore', arr.toString(), 7);
+						window.location = 'logon.html';
+					}
+				} else {
+					arr = getCookie("usermore").split(',');
+					if(arrsearch($('.userr').val(), arr)) {
+						$('.input-tip').eq(0).html("　　用户名已存在");
+						$('.input-tip').eq(0).css('color', 'red');
+						$('.form-item').eq(0).css('border-color', 'red');
+					} else {
+						arr.push($('.userr').val(), $('.psdd').val());
+						addCookie('usermore', arr.toString(), 7);
+						window.location = 'logon.html';
+					}
+				}
+			} else {
+				alert('请补全或完善信息')
+			}
+
+		});
+	})();
 })();
 
 //     ----------------登录cookie----------------------------

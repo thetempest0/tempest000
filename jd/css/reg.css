@@ -192,6 +192,7 @@ select{
     border: 0;
     font-size: 16px;
     font-family: "Microsoft YaHei","Hiragino Sans GB";
+    cursor: pointer;
 }
 .reg-other{
 	float: left;
@@ -276,5 +277,17 @@ select{
     top: 3px;
     width: 110px;
     height: 46px;
+    cursor: pointer;
+}
+.form-item .btn-phonecode {
+    position: absolute;
+    right: 3px;
+    top: 3px;
+    width: 110px;
+    height: 46px;
+    border: none;
+    background: #f2f2f2;
+    color: #333;
+    padding: 0;
     cursor: pointer;
 }
